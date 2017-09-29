@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.gourmex" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.personalvirtual" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="res/icons/android/icon-36-ldpi.png" />
@@ -87,7 +87,7 @@
         <splash height="800" src="res/screens/wp8/SplashScreenImage.screen-WVGA.jpg" width="480" />
         <splash height="1280" src="res/screens/wp8/SplashScreenImage.screen-WXGA.jpg" width="768" />
     </platform>
-    <name>Gourmex</name>
+    <name>Personal Virtual</name>
     <description>
         Tenha comunicação direta com um Personal Trainer real para planejar e orientar suas atividades físicas.
      </description>
