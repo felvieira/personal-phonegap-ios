@@ -1,7 +1,7 @@
 {
-    "name": "com.phonegap.gourmex",
+    "name": "com.phonegap.personalvirtual",
     "version": "1.0.0",
-    "displayName": "Gourmex",
+    "displayName": "Personal Virtual",
     "cordova": {
         "platforms": [
             "android",

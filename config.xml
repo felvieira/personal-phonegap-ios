@@ -89,13 +89,14 @@
     </platform>
     <name>Gourmex</name>
     <description>
-        O Gourmex é o aplictivo de delivery completo onde você pode fazer seu pedido nas empresas cadastradas.     </description>
-    <author email="suporte@delivoro.com.br" href="http://gourmex.com">
-        Gourmex.com
+        Tenha comunicação direta com um Personal Trainer real para planejar e orientar suas atividades físicas.
+     </description>
+    <author email="meupersonalvirtual@gmail.com" href="http://www.meupersonalvirtual.com.br">
+        http://www.meupersonalvirtual.com.br
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="http://www.gourmex.com/*" />
+    <allow-navigation href="http://www.meupersonalvirtual.com.br*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
