@@ -79,6 +79,7 @@ function abrirApp() {
 	var pushToken = document.getElementById("OneSignalPushToken").textContent;
 	var urlRedirect = 'http://app.meupersonalvirtual.com.br';
 	var urlRedirectFinal = urlRedirect + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
+	alert(`PushID = ${pushID} , PushToken = ${pushToken} , ${urlRedirectFinal}`)
 	window.open(urlRedirectFinal, "_self");
 }
 
