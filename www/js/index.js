@@ -77,7 +77,7 @@ function abrirApp() {
 	document.getElementById("loader-pre-container").classList.add("hide-loader");
 	var pushID = document.getElementById("OneSignalUserID").textContent;
 	var pushToken = document.getElementById("OneSignalPushToken").textContent;
-	var urlRedirect = 'http://app.meupersonalvirtual.com.br';
+	var urlRedirect = 'http://app.meupersonalvirtual.com.br/';
 	var urlRedirectFinal = urlRedirect + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
 	alert(`PushID = ${pushID} , PushToken = ${pushToken} , ${urlRedirectFinal}`)
 	window.open(urlRedirectFinal, "_self");
