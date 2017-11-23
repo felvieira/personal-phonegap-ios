@@ -18,7 +18,7 @@ var app = {
 			window.plugins.OneSignal.getIds(function (ids) {
 				console.log('getIds: ' + JSON.stringify(ids));
 				console.log("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
-				alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
+				// alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
 
 				document.getElementById("OneSignalUserID").innerHTML = ids.userId;
 				document.getElementById("OneSignalPushToken").innerHTML = ids.pushToken;
@@ -39,6 +39,12 @@ var app = {
 
 		document.getElementById("abrirApp")
 			.addEventListener("click", abrirApp, false);
+
+		document.addEventListener("backbutton", onBackKeyDown, false);
+
+		function onBackKeyDown(e) {
+			e.preventDefault();
+		}
 
 	},
 
@@ -81,8 +87,8 @@ function abrirApp() {
 	var pushToken = document.getElementById("OneSignalPushToken").textContent;
 	var urlRedirect = 'http://app.meupersonalvirtual.com.br/?';
 	var urlRedirectFinal = urlRedirect + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
-	alert(`PushID = ${pushID} , PushToken = ${pushToken} , ${urlRedirectFinal}`)
-	window.open(urlRedirectFinal, "_self", 'location=no,toolbar=no');
+	alert(`PushID = ${pushID} , PushToken = ${pushToken} , ${urlRedirectFinal}`);
+	window.open(urlRedirectFinal, "_self", 'location=no,toolbar=no,hardwareback=no');
 }
 
 app.initialize();
