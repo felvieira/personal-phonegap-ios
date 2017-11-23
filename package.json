@@ -11,7 +11,9 @@
         "plugins": {
             "cordova-plugin-device": {},
             "cordova-plugin-firebase": {},
-            "cordova-plugin-geolocation": {},
+            "cordova-plugin-geolocation": {
+                "GEOLOCATION_USAGE_DESCRIPTION": " "
+            },
             "cordova-plugin-whitelist": {},
             "onesignal-cordova-plugin": {},
             "cordova-plugin-inappbrowser": {}
@@ -19,8 +21,8 @@
     },
     "dependencies": {
         "cordova-android": "^6.1.2",
-        "cordova-ios": "^4.5.4",
-        "cordova-plugin-compat": "^1.2.0",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-compat": "^1.0.0",
         "cordova-plugin-device": "^1.1.7",
         "cordova-plugin-firebase": "^0.1.24",
         "cordova-plugin-geolocation": "^2.4.3",
