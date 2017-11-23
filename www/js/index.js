@@ -18,8 +18,10 @@ var app = {
 			window.plugins.OneSignal.getIds(function (ids) {
 				console.log('getIds: ' + JSON.stringify(ids));
 				console.log("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
-				// alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
+				alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
 
+				document.getElementById("OneSignalUserID").innerHTML = ids.userId;
+				document.getElementById("OneSignalPushToken").innerHTML = ids.pushToken;
 			});
 
 			// Call syncHashedEmail anywhere in your app if you have the user's email.
@@ -77,7 +79,7 @@ function abrirApp() {
 	document.getElementById("loader-pre-container").classList.add("hide-loader");
 	var pushID = document.getElementById("OneSignalUserID").textContent;
 	var pushToken = document.getElementById("OneSignalPushToken").textContent;
-	var urlRedirect = 'http://app.meupersonalvirtual.com.br/';
+	var urlRedirect = 'http://app.meupersonalvirtual.com.br/?';
 	var urlRedirectFinal = urlRedirect + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
 	alert(`PushID = ${pushID} , PushToken = ${pushToken} , ${urlRedirectFinal}`)
 	window.open(urlRedirectFinal, "_self");
