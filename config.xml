@@ -98,7 +98,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="http://www.meupersonalvirtual.com.br*" />
+    <allow-navigation href="http://app.meupersonalvirtual.com.br*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
