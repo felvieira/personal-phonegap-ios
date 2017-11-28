@@ -40,6 +40,9 @@ var app = {
 		document.getElementById("abrirApp")
 			.addEventListener("click", abrirApp, false);
 
+		document.getElementById("abrirApp")
+			.addEventListener("touchstart", abrirApp, false);
+
 		document.addEventListener("backbutton", onBackKeyDown, false);
 
 		function onBackKeyDown(e) {
@@ -82,12 +85,13 @@ function onError(error) {
 }
 
 function abrirApp() {
+	// alert('CLICOU!')
 	document.getElementById("loader-pre-container").classList.add("hide-loader");
 	var pushID = document.getElementById("OneSignalUserID").textContent;
 	var pushToken = document.getElementById("OneSignalPushToken").textContent;
 	var urlRedirect = 'http://app.meupersonalvirtual.com.br/?';
 	var urlRedirectFinal = urlRedirect + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
-	alert(`PushID = ${pushID} , PushToken = ${pushToken} , ${urlRedirectFinal}`);
+	// alert(`PushID = ${pushID} , PushToken = ${pushToken} , ${urlRedirectFinal}`);
 	window.open(urlRedirectFinal, "_self", 'location=no,toolbar=no,hardwareback=no');
 }
 
