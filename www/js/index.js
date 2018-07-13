@@ -37,6 +37,16 @@ var app = {
 	onDeviceReady: function () {
 		this.receivedEvent('deviceready');
 
+		window.open = cordova.InAppBrowser.open;
+
+		// document.addEventListener('click', function (e) {
+		// 	if (e.target.tagName === 'A' &&
+		// 		e.target.href.match(/^https?:\/\//)) {
+		// 		e.preventDefault();
+		// 		window.open(e.target.href, '_system');
+		// 	}
+		// });
+
 		document.getElementById("abrirApp")
 			.addEventListener("click", abrirApp, false);
 
